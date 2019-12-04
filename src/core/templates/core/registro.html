@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--hoja de estilo-->
+	<link rel="stylesheet" href="{% static 'core/css/registro.css'%}">
+	<!--google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Gochi+Hand&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+
+</head>
+<body>
+   <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">   
+        </ul>
+        <ul class="navbar-nav my-2 my-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="{% static 'core/templates/index.html'%}">Inicio </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="{% static 'core/templates/registro.html'%}">Nosotros </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="{% static 'core/templates/login.html'%}">Ingresar </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+	<form>
+	<div class="container" id="registro">
+		<center>
+      <div class="logotipo">
+          <img src="{% static 'core/media/img/castle.png'%}"><h3 >Developers Castle</h3>
+     </div>
+    </center>
+  	<div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">User name</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="User name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Email</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Password</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Phone number</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Phone number">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">User type</label>
+      <select id="inputState" class="form-control">
+      	 <option selected>..Selected</option>
+        <option selected>Invitado</option>
+         <option selected>Cliente</option>
+      </select>
+    </div>
+    
+  </div>
+  
+  <center><button type="submit" class="btn btn-primary">Sign in</button></center>
+</div>
+</form>
+
+  <!-- Footer -->
+    <footer class="">
+      <p class="text-center text-light">Copyright © Todos los Derechos Reservados</p>
+    </footer>
+<!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'core/js/jquery-3.3.1.slim.min.js' %}"></script>
+    <script src="{% static 'core/js/popper.min.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/js/all.min.js' %}"></script>
+	
+</body>
+</html>

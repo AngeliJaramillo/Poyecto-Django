@@ -1,0 +1,191 @@
+<!--Incluimos la plantilla base a nuestro html: -->
+{% extends 'core/base.html' %}
+<!--Marcamos el titulo que queremos ver en la página-->
+{% block title %} Developers castle {% endblock %}
+<!--Marcamos el inicio del contenido-->
+{% block content %}
+<!--Archivos Estaticos-->
+{% load static %}
+
+   <!-- Menu -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">   
+          </ul>
+          <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="{% static 'core/templates/nosotros.html'%}"> Nosotros </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="{% static 'core/templates/registro.html'%}"> Registro </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="{% static 'core/templates/login.html'%}"> Ingresar </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Imagen principal -->
+    <div class=" jumbotron fondoin ">
+        <center>
+            <div class="logotipo">
+                <img src="{% static 'core/media/img/castle.png'%}" style="width: 20%"><h3 >Developers Castle</h3>
+                <br>
+                <div class="btn btn-black" style="background-color: black">
+                <a class="nav-link text-light" href="{% static 'core/templates/registro.html' %}">Registro </a>
+                </div>
+           </div>
+          </center>
+    </div>
+    <!-- promocion -->
+      <section class="container">
+      <div class="row container ">
+        <div class="col-sm-6">
+          <img class="col-sm-12 img-fluid" src="{% static 'core/media/img/fo.jpg'%}">
+        </div>
+        <div class="col-sm-6" style="margin-top: 7%">
+          <h3 class="text-center display-5">Paso 1</h3>
+          <p class="text-center">Registrate en un solo paso</p>
+        </div>
+        <div class="col-sm-6" style="margin-top: 10%">
+          <h3 class="text-center display-5">Paso 2</h3>
+          <p class="text-center">Sube tus datos y adjunta tu hoja de vida</p>
+        </div>
+        <div class="col-sm-6">
+          <img class="col-sm-12 img-fluid" src="{% static 'core/media/img/fondit.jpg'%}">
+        </div>
+       <div class="col-sm-6">
+          <img class="col-sm-12 img-fluid" src="{% static 'core/media/img/fond.jpg'%}">
+        </div>
+        <div class="col-sm-6" style="margin-top: 10%">
+          <h3 class="text-center display-5">Paso 3</h3>
+          <p class="text-center">A trabajar</p>
+        </div>
+      </div>
+    </section>
+    <!-- nosotros -->
+    <div class="" style="margin: 60px">
+      <section class="container">
+      <div class="row container">
+        <div class="col-sm-4">
+          <h3 class="text-center display-5">Creado por:</h3>
+          <img class="col-sm-12 img-fluid " src="{% static 'core/media/img/fond.jpg'%}">
+          <br>
+          <h5 class="mb-0 text-center">Melisa Carmona Sosa</h5>
+          <br>
+          <h6 class="mb-0 text-center">Esta aprendiz del SENA se destaca más en lenguajes que van ligados al fronted como HTML, CSS. Ha realizado distintos proyectos en diferentes entornos de desarrollo y lenguajes tales como c# haciendo uso de Web Service.</h6>
+        </div>
+        <div class="col-sm-4">
+          <h3 class="text-center display-5">Creado por:</h3>
+          <img class="col-sm-12 img-fluid" src="{% static 'core/media/img/fond.jpg'%}">
+          <br>
+          <h5 class="mb-0 text-center">Camilo Vahos López</h5>
+          <br>
+          <h6 class="mb-0 text-center">Camilo es una persona emprendedora que va a lo grande, su objetivo principal es obtener el suficiente conocimiento para montar su propia empresa en torno al desarrollo, ha realizado estudios en otros idiomas tales como Inglés y Francés.</h6>
+        </div>
+       <div class="col-sm-4">
+          <h3 class="text-center display-5">Creado por:</h3>
+          <img class="col-sm-12 img-fluid" src="{% static 'core/media/img/fond.jpg'%}">
+          <br>
+          <h5 class="mb-0 text-center">Angeli Jaramillo Dominguez</h5>
+          <br>
+          <h6 class="mb-0 text-center">A esta aprendiz le gusta ir más allá de lo que le proponen y superar sus propios límites. Su especilidad es el backend le gusta realizar Base de Datos y hacer las debidas conexiones y validaciones que se requieren a la hora de realizar páginas o aplicaciones.</h6>
+        </div>
+  </div>
+      </div>
+    </section>
+    </div>
+  <!--formulario-->
+  <section class="container-fluid mt-2 bg-dark">
+      <div class="col-md-6">
+                      <h4 class="text-light text-justify">Dejanos un Mensaje</h4>
+                      <form class="row text-light">
+                        
+                        <div class="form-group col-sm-6 text-light font-weight-bold">
+                          <label for="exampleFormControlInput1">Correo Electrónico</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+                        </div>
+                        <div class="form-group col-sm-6 text-light font-weight-bold">
+                          <label for="exampleFormControlSelect1">Tipo de Atención Requerida</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Petición</option>
+                            <option>Felicitación</option>
+                            <option>Solicitud</option>
+                            <option>Reclamo</option>
+                            <option>Queja</option>
+                          </select>
+                        </div>
+  
+                        <div class="form-group col-sm-12 text-light font-weight-bold">
+                          <label for="exampleFormControlInput1">Nombre</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                          <label for="exampleFormControlInput1">Apellido</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                        </div>
+  
+                        <div class="form-group col-sm-12 text-light font-weight-bold">
+                          <label for="exampleFormControlTextarea1">Mensaje:</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group col-sm-12 text-right">
+                          <button type="button" class="btn btn-info">Enviar</button>
+                        </div>
+  
+                      </form>
+                  </div>
+      </section>
+<!--Marcamos el final del contenido-->
+
+
+
+<div class="col-md-6">
+    <h4 class="text-light">Déjanos un Mensaje</h4>
+    <form class="row text-light" method="POST">
+        <!--Nos aseguramos que el formulario se envie de manera segura-->
+        {% csrf_token %}
+        <div class="form-group col-sm-6">
+            <label for="exampleFormControlInput1">Correo Electrónico</label>
+            {{formulario.email}}
+        </div>
+        <div class="form-group col-sm-6">
+            <label for="exampleFormControlSelect1">Tipo de atención requeida</label>
+            {{formulario.tipom}}
+        </div>
+        <div class="form-group col-sm-12">
+            <label for="exampleFormControlInput1">Nombre</label>
+            {{formulario.nombre}}
+        </div>
+        <div class="form-group col-sm-12">
+            <label for="exampleFormControlTextarea1">Mensaje:</label>
+            {{formulario.msj}}
+        </div>
+        {% if 'OK' in request.GET %}
+            <span class="col-sm-12 alert alert-succes mx-2" role="alert">
+                Hemos enviado tu mensaje!
+            </span>
+            {% else %}
+            <div class="form-group col-sm-12 text-right">
+                <button type="submit" class="btn btn-info col-md-6">Enviar</button>
+            </div>
+            {% endif %}
+    </form>
+
+</div>
+   <!-- Footer -->
+  
+<footer class="" style="background-color: black">
+        <p class="text-center text-light" >Copyright © Todos los Derechos Reservados</p>
+      </footer>
+
+  <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+  </html>
+  {% endblock %}
+
+
+
+

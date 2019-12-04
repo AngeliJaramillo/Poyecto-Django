@@ -1,0 +1,25 @@
+body
+{
+	background-image:url(../imagen/fondoLogin.jpg); 
+}
+#registro
+{
+	margin-top:50px;
+	margin-bottom:50px;
+	width:500px;
+}
+.logotipo img
+{
+	width:100px;
+}
+.logotipo h3
+{
+	margin-top:5px;
+	margin-bottom: 20px;
+	font-family: 'Didact Gothic', sans-serif;;
+	color:black;
+}
+label
+{
+	color:black;
+}

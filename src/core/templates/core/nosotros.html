@@ -1,0 +1,101 @@
+<!--Incluimos la plantilla base a nuestro html: -->
+{% extends 'core/base.html' %}
+<!--Marcamos el titulo que queremos ver en la página-->
+{% block title %} Developers castle {% endblock %}
+<!--Marcamos el inicio del contenido-->
+{% block content %}
+<!--Archivos Estaticos-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'core/css/nosotros.css'%}">
+</head>
+<body>
+<!--bootstrap-->
+<link rel="stylesheet" type="text/css" href="{% static 'core/css/bootsprap.css'%}">  
+<!--iconos-->
+<link rel="stylesheet" type="text/css" href="{% static 'core/css/all.css'%}" >
+</body>
+</html>
+
+  <body>
+     <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">   
+        </ul>
+        <ul class="navbar-nav my-2 my-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="{% static 'core/templates/index.html'%}">Inicio </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="{% static 'core/templates/registro.html'%}">Registro </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="{% static 'core/templates/login.html'%}">Ingresar </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1 class="titulo mt-4 ml-4">Nuestros Desarrolladores</h1>
+
+    
+    <!--imagen grupal-->
+    <div class="container" id="card">
+    <div class="card mb-4" style="max-width: 1200px;">
+  <div class="row no-gutters">
+    <div class="col-md-4" id="imagen">
+      <img src="{% static 'core/media/img/equipazo.jpg'%}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body" id="texto">
+        <h5 class="card-title">Más que un equipo de trabajo</h5>
+        <p class="card-text">Actualmente somos aprendices del Servicio Nacional de Aprendizaje (SENA), estudiantes del area de TICS, enfocados en la carrera del desarrollo de software con distintas habilidades y destrezas. Cada uno se ha desempeñado anteriormente en otras areas como son  en el area empresarial, relaciones interpersonales y otros idiomas diferentes al nuestro. Si quieres saber más a cerca de nosotros ¡No dejes de leer!.</p>
+       <center><img src="{% static 'core/media/img/sena.png'%}"></center>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+
+<!--sub cards-->
+<div class="card-deck text-dark" id="descripcion">
+  <div class="card">
+      <div class="card-body">
+      <h5 class="card-title">Melisa Carmona Sosa </h5>
+      <p class="card-text">Esta aprendiz del SENA se destaca más en lenguajes que van ligados al fronted como HTML, CSS. Ha realizado distintos proyectos en diferentes entornos de desarrollo y lenguajes tales como c# haciendo uso de Web Service, PHP y con ayuda de bootstrap hizo un marketplace. Actualmente esta desarrollando una página para musicos locales de la ciudad de Medellín. Además le gusta trabajar en Bases de Datos. </p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-body">
+      <h5 class="card-title">Camilo Vahos López </h5>
+      <p class="card-text">Camilo es una persona emprendedora que va a lo grande, su objetivo principal es obtener el suficiente conocimiento para montar su propia empresa en torno al desarrollo, ha realizado estudios en otros idiomas tales como Inglés y Francés, su lenguaje de programación favorito es python por ende realizó estudios extras entorno a este lenguaje. Hizo una plataforma con ayuda de compañeros para la agilización de pagos y actualmente esta realizando una plataforma con la finalidad de darle más comodidad y alcance a las personas para encontrar lugares en donde realizar sus compras.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-body">
+      <h5 class="card-title">Angeli Jaramillo Dominguez</h5>
+      <p class="card-text">A esta aprendiz le gusta ir más allá de lo que le proponen y superar sus propios límites. Su especilidad es el backend le gusta realizar Base de Datos y hacer las debidas conexiones y validaciones que se requieren a la hora de realizar páginas o aplicaciones. Constantemente busca nuevas fronteras para tener ideas de desarrollo por tal motivo ha estudiado java y también la parte del frontend con HTML, CSS Y PHP. Ella desarrollo una red social similar a instagram haciendo uso de PHP y de laravel, hizo también un proyecto de agencia de viajes utilizando Web Service y actualmente esta desarrollando una plataforma para la promoción de musicos locales de la ciudad de Medellín. </p>
+      </div>
+  </div>
+</div>
+ <br>
+ <br>  
+
+  <!-- Footer -->
+    <footer class="" style="background-color: black">
+      <p class="text-center text-light">Copyright © Todos los Derechos Reservados</p>
+    </footer>
+
+    <script src="{% static 'core/js/jquery-3.3.1.slim.min.js' %}"></script>
+    <script src="{% static 'core/js/popper.min.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/js/all.min.js' %}"></script>
+
+  </body>
+</html>
+{% endblock %}
